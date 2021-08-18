@@ -2,7 +2,13 @@ language: java
 jdk:
  - openjdk10
  - openjdk11
-jobs:
-  include:
-   - dist: trusty
-   - dist: precise
+#jobs:
+#  include:
+#   - dist: trusty
+#   - dist: precise
+matrix:
+    include:
+      - os: linux
+        dist: trusty
+      - os: linux
+        dist: precise
